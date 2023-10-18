@@ -1,9 +1,57 @@
 4. In React, what is the role of components, and what are the methods for creating them?
 
 answer:
-
 1.
 https://www.w3schools.com/react/react_components.asp
 
+2.
+https://legacy.reactjs.org/docs/components-and-props.html
 
+Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML via a render() function.
+Components come in two types, Class components and Function components
 Components are like functions that return HTML elements.
+
+
+In React, components are the building blocks of a user interface. They are the fundamental units that you use to create a UI for your web application. Each component represents a reusable, self-contained piece of the user interface that can have its own state and behavior. Components can be as simple as a button or as complex as an entire page or application.
+
+There are two primary methods for creating components in React:
+
+Function Components:
+Function components are the simplest way to create components in React. They are also known as stateless or functional components. You define a component as a JavaScript function that takes props (short for properties) as an argument and returns JSX (JavaScript XML) to describe the component's UI. Here's an example of a basic function component:
+
+import React from 'react';
+
+function MyComponent(props) {
+  return <div>{props.text}</div>;
+}
+
+Class Components:
+Class components are the older way of creating components in React. They are also known as stateful components because they have the ability to manage their own internal state. Class components extend the React.Component class and use methods like render, componentDidMount, and setState to define their behavior. Here's an example of a class component:
+
+import React, { Component } from 'react';
+
+class MyComponent extends Component {
+  render() {
+    return <div>{this.props.text}</div>;
+  }
+}
+
+Both function and class components can receive data via props, which are read-only, and they can use local state to manage their internal data. Components can also respond to events, handle user interactions, and communicate with other components through props and state.
+
+Here's how you might use these components in a parent component:
+import React from 'react';
+import MyComponent from './MyComponent';
+
+function App() {
+  return (
+    <div>
+      <MyComponent text="Hello, World!" />
+    </div>
+  );
+}
+Components are the building blocks that allow you to break down your UI into smaller, reusable pieces, making it easier to develop and maintain complex web applications in React.
+
+
+
+
+
