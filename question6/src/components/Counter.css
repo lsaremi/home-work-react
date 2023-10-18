@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: aqua;
+}
+
+.result {
+  width: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
