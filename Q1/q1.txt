@@ -1,0 +1,50 @@
+1. Explain the distinction between a framework and a library and also identify whether React is considered a framework or a library and explain why.
+
+answer:
+
+1.
+https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/#:~:text=Frameworks%20and%20libraries%20are%20both,A%20library%20doesn't.
+
+2.
+https://www.linkedin.com/pulse/what-react-js-difference-between-framework-library-tejas-musale/
+
+
+
+Frameworks and libraries are both software tools or collections of pre-written code that help developers build applications more efficiently. However, they have distinct differences in terms of control, architecture, and the way they are used:
+
+Library:
+
+Library is a collection of functions, classes, and modules that you can use in your code. It provides specific, well-defined functionality that you can call when needed.
+Libraries are typically designed to be flexible and provide you with a set of tools to solve specific tasks. You have control over your application's architecture, and you choose when and how to use the library's components.
+Libraries do not impose a specific structure on your project. You integrate them into your application and use them as needed.
+Libraries are often less opinionated, which means they don't dictate a strict way to organize your code or the overall application architecture.
+Framework:
+
+Framework is a comprehensive, pre-built architecture that defines the structure and flow of your application. It typically includes libraries but also enforces a specific way of building and organizing your application.
+Frameworks are opinionated and provide a higher level of abstraction, meaning they dictate how you should structure your code, where you place certain files, and how components interact.
+Developers often work within the framework's conventions, following its design patterns and guidelines.
+Frameworks are more prescriptive and are designed to guide the developer through the entire application development process.
+Now, when it comes to React, it's a bit of a unique case:
+
+React is often described as a library. It's officially referred to as a "JavaScript library for building user interfaces" on the React website. React provides a set of components and tools for creating user interfaces, but it doesn't dictate the entire architecture of your application.
+
+However, React can be thought of as the "view" part of the application's architecture. To build a complete web application, you would often use other libraries or frameworks (like Redux for state management) in conjunction with React. When you combine React with other libraries and tools, you create a more comprehensive framework-like structure for your application. This is sometimes referred to as a "React-based framework."
+
+In summary, React is primarily considered a library because it provides a specific set of tools for building user interfaces, but in practice, it can be part of a larger framework when used in conjunction with other tools to create a complete application structure. The distinction between library and framework can sometimes be blurred in modern development, and the choice of which to use depends on your project's needs and your development preferences.
+
+
+
+ وقتی یک متد را از کتابخانه فراخوانی میکنیم ما هستیم که بر فرایند آن کنترل داریم اما در فریم ورک این فریم ورک است که  کدهای ما را فراخوانی میکند
+ هنگامی که  از کتاب‌خانه استفاده می‌کنیم، کنترل تمام روند برنامه در دست ماست این ما هستیم که انتخاب میکنیم کی و کجا از کتابخانه استفاده کنیم
+ اما در فریم ورک این فریم ورک است که کنترل را به دست میگیرد برخی از مکانها را برای ما فراهم میکند تا بتوانیم کد خود را به فریم ورک متصل کنیم و زمان نیاز کدها را فراخوانی میکند
+
+   فریم‌ورک مانند یک کارخانه عمل می‌کند. با کدهای از پیش ساخته شده به ما کمک می‌کند محصول خود را بدون فکر کردن به
+  مسائل جزعی و پیکربندی‌های پیچیده، بسازیم.
+
+  فریم‌ورک اسکلتی را تعریف می‌کند که در آن، برنامه ما ویژگی‌های خاص خود را برای تکمیل‌کردن این‌اسکلت به آن می‌افزاید. از این‌طریق، فریم‌ورک در زمان موردنیاز کدها را فراخوانی ‌می‌کند.
+ درحالی  که ویژگی‌های محدودتری در کتاب‌خانه وجود دارد کتاب خانه یک مجموعه از توابع، کلاس‌ها و کامپوننت‌ها است که  می‌توان از آن‌ها استفاده کرد
+ برخلاف فریمورک، کتاب خانه ها به شکل ماژولار و مستقل ارائه می‌شوند و  می‌توان بر اساس نیاز خود کتاب خانه را به پروژه خود اضافه کرد.
+  کتاب خانه مثل خونه میمونه که خیلی قوانین زیادی نداره و ما دستمون بازه برای گزاشتن وسایل و راحتتریم درحالی که فریم ورک مثل مدرسه یا دانشگاس که قواعد  و محدودیت های خودش رو داره که باید از اونها تبعیت کنیم
+  کتابخونه مثل ری  اکت و جی کووری و فریم ورک مثل جنگو برای پایتون
+
+ تفاوت اصلی بین فریمورک و لایبری در این است که فریمورک یک ساختار کامل و گسترده را ارائه می‌دهد که برنامه‌نویسان را در توسعه نرم‌افزار هدایت می‌کند، در حالی که لایبری یک مجموعهٔ ابزارها و کامپوننت‌ها است که برنامه‌نویسان می‌توانند بر اساس نیاز خود به پروژه‌های خود اضافه کنند. در واقع، فریمورک معمولاً شامل لایبری‌های مختلفی است که برای پشتیبانی از قابلیت‌ها و عملکرد خاصی در نرم‌افزار طراحی شده‌اند.
