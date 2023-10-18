@@ -1,0 +1,9 @@
+4. In React, what is the role of components, and what are the methods for creating them?
+
+answer:
+
+1.
+https://www.w3schools.com/react/react_components.asp
+
+
+Components are like functions that return HTML elements.
