@@ -1,0 +1,134 @@
+3. How is JSX utilized in React?
+
+answer:
+1.
+https://react.dev/learn/writing-markup-with-jsx
+
+2.
+https://www.w3schools.com/react/react_jsx.asp#:~:text=JSX%20allows%20us%20to%20write%20HTML%20elements%20in%20JavaScript%20and,easier%20to%20write%20React%20applications.
+
+JSX stands for JavaScript XML.
+
+JSX allows us to write HTML in React.
+
+JSX makes it easier to write and add HTML in React.
+
+JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement()  and/or appendChild() methods.
+
+JSX converts HTML tags into react elements.
+
+You are not required to use JSX, but JSX makes it easier to write React applications.
+
+JSX allows us to write HTML directly within the JavaScript code.
+
+JSX is an extension of the JavaScript language based on ES6, and is translated into regular JavaScript at runtime.
+
+With JSX you can write expressions inside curly braces { }.
+
+The expression can be a React variable, or property, or any other valid JavaScript expression. JSX will execute the expression and return the result:
+
+Inserting a Large Block of HTML
+To write HTML on multiple lines, put the HTML inside parentheses:
+
+One Top Level Element
+The HTML code must be wrapped in ONE top level element.
+
+So if you like to write two paragraphs, you must put them inside a parent element, like a div element.
+
+you can use a "fragment" to wrap multiple lines. This will prevent unnecessarily adding extra nodes to the DOM.
+
+A fragment looks like an empty HTML tag: <></>.
+
+Attribute class = className
+The class attribute is a much used attribute in HTML, but since JSX is rendered as JavaScript, and the class keyword is a reserved word in JavaScript, you are not allowed to use it in JSX.
+
+Use attribute className instead.
+JSX solved this by using className instead. When JSX is rendered, it translates className attributes into class attributes.
+
+Conditions - if statements
+React supports if statements, but not inside JSX.
+
+To be able to use conditional statements in JSX, you should put the if statements outside of the JSX, or you could use a ternary expression instead
+
+const x = 5;
+const myElement = <h1>{(x) < 10 ? "Hello" : "Goodbye"}</h1>;
+
+Logical && Operator
+Another way to conditionally render a React component is by using the && operator.
+
+function MyComponent({ condition }) {
+  return (
+    <div>
+      <h1>Title</h1>
+      {condition && <ConditionalComponent />}
+    </div>
+  );
+}
+
+
+3.
+
+JSX (JavaScript XML) is a syntax extension for JavaScript that is commonly used in React for defining the structure of user interfaces. JSX makes it easier to describe the visual appearance of a UI component in a way that resembles HTML or XML. It's a key part of how React components are created and rendered. Here's how JSX is utilized in React:
+
+Embedding HTML-like syntax: JSX allows you to write UI components using a syntax that looks very similar to HTML. For example, you can write elements like <div>, <h1>, and <p> directly in your JavaScript code.
+
+
+const element = <h1>Hello, World!</h1>;
+Component Rendering: JSX is used to define React components. React components are typically JavaScript classes or functions that return JSX. For example, you can create a functional component like this:
+
+
+function Greeting(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+JS Expressions: You can embed JavaScript expressions inside JSX by using curly braces {}. This allows you to dynamically render data, perform calculations, or execute logic within your JSX code.
+
+
+const x = 5;
+const element = <p>The square of 5 is {x * x}</p>;
+Component Composition: JSX allows you to nest components within each other. This is a fundamental concept in React, where you can compose complex UIs by combining smaller, reusable components.
+
+
+function App() {
+  return (
+    <div>
+      <Greeting name="Alice" />
+      <Greeting name="Bob" />
+    </div>
+  );
+}
+Event Handling: You can attach event handlers to JSX elements, making it easy to handle user interactions.
+
+
+function handleClick() {
+  alert('Button clicked');
+}
+
+const button = <button onClick={handleClick}>Click me</button>;
+Conditional Rendering: JSX can be used with conditional statements like if and ternary operators to conditionally render different parts of the UI.
+
+
+function ConditionalRender(props) {
+  if (props.show) {
+    return <p>This is shown</p>;
+  } else {
+    return <p>Nothing to see here</p>;
+  }
+}
+List Rendering: JSX is often used in conjunction with arrays or lists to render multiple elements dynamically.
+
+
+const items = ['Apple', 'Banana', 'Cherry'];
+const list = (
+  <ul>
+    {items.map((item, index) => (
+      <li key={index}>{item}</li>
+    ))}
+  </ul>
+);
+Styling: You can apply inline styles to JSX elements using the style attribute.
+
+
+const style = { color: 'blue', fontSize: '20px' };
+const element = <p style={style}>Styled text</p>;
+
+In summary, JSX is a fundamental part of React, allowing developers to describe the structure and behavior of user interfaces in a way that is both familiar and expressive. It gets transpiled to JavaScript by tools like Babel before it's executed in the browser. This allows developers to write readable and maintainable code for building web applications with React.
