@@ -1,0 +1,84 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Braveheart",
+      "year": "",
+      "status": true,
+      "rate": 8.3,
+      "pic": "./assets/Braveheart.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Green Book",
+      "year": "2018",
+      "status": true,
+      "rate": 8.2,
+      "pic": "./assets/Green Book.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Joker",
+      "year": "2019",
+      "status": false,
+      "rate": 8.4,
+      "pic": "./assets/Joker.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Green Mile",
+      "year": "1999",
+      "status": true,
+      "rate": 8.6,
+      "pic": "./assets/The Green Mile.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Inception",
+      "year": "2010",
+      "status": true,
+      "rate": 8.8,
+      "pic": "./assets/Inception.jpg"
+    },
+    {
+      "id": 6,
+      "title": "The Pianist",
+      "year": "",
+      "status": true,
+      "rate": 7.2,
+      "pic": "./assets/The Pianist.jpg"
+    },
+    {
+      "id": 7,
+      "title": "House Of Gucci",
+      "year": "",
+      "status": false,
+      "rate": 6.6,
+      "pic": "./assets/House Of Gucci.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Heidi",
+      "year": "",
+      "status": true,
+      "rate": 7.2,
+      "pic": "./assets/Heidi.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Detachment",
+      "year": "2011",
+      "status": true,
+      "rate": 7.7,
+      "pic": "./assets/Detachment.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The Great Gatsby",
+      "year": "2013",
+      "status": true,
+      "rate": 7.2,
+      "pic": "./assets/The Great Gatsby.jpg"
+    }
+  ]
+}
