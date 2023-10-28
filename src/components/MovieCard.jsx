@@ -1,13 +1,13 @@
-import BtnDeleteSvg from "./utilities/BtnDeleteSvg";
-import BtnEditSvg from "./utilities/BtnEditSvg";
-import RateSvg from "./utilities/RateSvg";
+import BtnDeleteSvg from "./svgs/BtnDeleteSvg";
+import BtnEditSvg from "./svgs/BtnEditSvg";
+import RateSvg from "./svgs/RateSvg";
 
 const MovieCard = ({
   movie,
   onShowModalDeleteForThisMovie,
   onShowModalEditForThisMovie,
 }) => {
-  const { title, status, rate, pic } = movie;
+  const { title, status, rate, pic, year } = movie;
 
   return (
     <div className="bg-green-100 w-full flex flex-col items-center justify-between gap-4 p-4 sm:p-6 rounded-md relative">
@@ -20,7 +20,11 @@ const MovieCard = ({
           <img className="rounded-md" width={100} src={pic} alt="movie-pic" />
         </div>
         <div className="h-full flex flex-col items-start justify-around">
-          <div className="">{title}</div>
+          <div className="">
+            {title}
+            <p className="text-xs">{year}</p>
+          </div>
+
           <p>{rate}/10</p>
           <RateSvg rate={rate} />
           <button className="">{status}</button>

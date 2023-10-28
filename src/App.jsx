@@ -1,15 +1,15 @@
 import { useState } from "react";
 import MovieCard from "./components/MovieCard";
-import DeleteModal from "./components/utilities/DeleteModal";
+import DeleteModal from "./components/common/DeleteModal";
 import data from "./data.json";
 import NewMovie from "./components/NewMovie";
-import EditModal from "./components/utilities/EditModal";
+import EditModal from "./components/common/EditModal";
 
 const { movies: moviesArr } = data;
 
 function App() {
   const [movies, setMovies] = useState(moviesArr);
-  const [newMovieName, setNewMovieName] = useState("");
+  const [searchMovieName, setSearchMovieName] = useState("");
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
   const [showAddModal, setShowAddModal] = useState(false);
@@ -40,7 +40,6 @@ function App() {
       movie.id === editedMovie.id ? editedMovie : movie
     );
     setMovies(updatedMovie);
-    console.log(updatedMovie);
     setSelectedMovieForEdit(null);
   };
 
@@ -59,9 +58,9 @@ function App() {
         {movies.length > 0 ? "Movie List" : "ADD A MOVIE"}
       </h1>
       <input
-        placeholder="Movie TItle"
-        value={newMovieName}
-        onChange={(e) => setNewMovieName(e.target.value)}
+        placeholder="Search here..."
+        value={searchMovieName}
+        onChange={(e) => setSearchMovieName(e.target.value)}
         className="py-2 px-10 w-full sm:w-3/4 md:w-2/4 rounded-md bg-green-100 outline-black"
       />
       <div className="grid grid-cols-1 gap-4 my-8 w-full sm:w-3/4 md:w-2/4">
@@ -94,25 +93,27 @@ function App() {
           +
         </span>
       </button>
-
-      <DeleteModal
-        movieName={selectedMovieForDelete?.title}
-        showModal={showDeleteModal}
-        onDelete={handleDelete}
-        onClose={() => setShowDeleteModal(false)}
-      />
-      <NewMovie
-        showModal={showAddModal}
-        onAddMovie={handleAddMovie}
-        onCancel={() => setShowAddModal(false)}
-      />
-
-      <EditModal
-        movie={selectedMovieForEdit}
-        showModal={showEditModal}
-        onEdit={handleEdit}
-        onCancel={() => setShowEditModal(false)}
-      />
+      {showDeleteModal && (
+        <DeleteModal
+          movieName={selectedMovieForDelete?.title} // '?.' is not necessery and selectedMovieForDelete.title is true too
+          onDelete={handleDelete}
+          onClose={() => setShowDeleteModal(false)}
+        />
+      )}
+      {showAddModal && (
+        <NewMovie
+          showModal={showAddModal}
+          onAddMovie={handleAddMovie}
+          onCancel={() => setShowAddModal(false)}
+        />
+      )}
+      {showEditModal && (
+        <EditModal
+          movie={selectedMovieForEdit}
+          onEdit={handleEdit}
+          onCancel={() => setShowEditModal(false)}
+        />
+      )}
     </div>
   );
 }

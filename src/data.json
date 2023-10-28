@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "Green Book",
-      "year": "2018",
+      "year": "(2018)",
       "status": true,
       "rate": 8.2,
       "pic": "./assets/Green Book.jpg"
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "title": "Joker",
-      "year": "2019",
+      "year": "(2019)",
       "status": false,
       "rate": 8.4,
       "pic": "./assets/Joker.jpg"
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "title": "The Green Mile",
-      "year": "1999",
+      "year": "(1999)",
       "status": true,
       "rate": 8.6,
       "pic": "./assets/The Green Mile.jpg"
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "title": "Inception",
-      "year": "2010",
+      "year": "(2010)",
       "status": true,
       "rate": 8.8,
       "pic": "./assets/Inception.jpg"
@@ -67,7 +67,7 @@
     {
       "id": 9,
       "title": "Detachment",
-      "year": "2011",
+      "year": "(2011)",
       "status": true,
       "rate": 7.7,
       "pic": "./assets/Detachment.jpg"
@@ -75,7 +75,7 @@
     {
       "id": 10,
       "title": "The Great Gatsby",
-      "year": "2013",
+      "year": "(2013)",
       "status": true,
       "rate": 7.2,
       "pic": "./assets/The Great Gatsby.jpg"
