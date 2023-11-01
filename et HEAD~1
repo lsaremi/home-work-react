@@ -1,0 +1,23 @@
+[33mcommit bf3f0bfeb9971de90c7ecdaab490319896709812[m[33m ([m[1;36mHEAD -> [m[1;32mhome-work19[m[33m)[m
+Author: elham saremi <elhamsaremi88@gmail.com>
+Date:   Wed Nov 1 20:27:24 2023 +0330
+
+    svg and png files that are required for the components
+
+[33mcommit 2c33346b034fc5f7b88e8b36b25812bf674a21ba[m
+Author: elham saremi <elhamsaremi88@gmail.com>
+Date:   Wed Nov 1 20:23:28 2023 +0330
+
+    feat:spinner the first load data from local storage
+
+[33mcommit 0140066ad6cf1a11fc1cb451734944fdcc82cc33[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/home-work19[m[33m, [m[1;32mmaster[m[33m)[m
+Author: elham saremi <elhamsaremi88@gmail.com>
+Date:   Sat Oct 28 18:57:53 2023 +0330
+
+    initial class work 19
+
+[33mcommit e0c87c788bd91777543e98fc67e0cda1d4ea48e9[m
+Author: elham saremi <elhamsaremi88@gmail.com>
+Date:   Tue Oct 17 16:56:06 2023 +0330
+
+    Initialize project using Create React App
