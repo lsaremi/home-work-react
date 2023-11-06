@@ -1,0 +1,52 @@
+{
+  "prodocts": [
+    {
+      "id": 1,
+      "title": "Spiced Mint",
+      "price": 9.99,
+      "pic": "./images/Spiced Mint"
+    },
+    {
+      "id": 2,
+      "title": "Sweet Straweberry",
+      "price": 9.99,
+      "pic": "./images/Sweet Straweberry"
+    },
+    {
+      "id": 3,
+      "title": "Fresh Orange",
+      "price": 9.99,
+      "pic": "./images/Fresh Orange"
+    },
+    {
+      "id": 4,
+      "title": "Fragrant Cinnamon",
+      "price": 9.99,
+      "pic": "./images/Fragrant Cinnamon"
+    },
+    {
+      "id": 5,
+      "title": "Cool Blueberries",
+      "price": 9.99,
+      "pic": "./images/Cool Blueberries"
+    },
+    {
+      "id": 6,
+      "title": "Summer Cherries",
+      "price": 9.99,
+      "pic": "./images/Summer Cherries"
+    },
+    {
+      "id": 7,
+      "title": "Juicy Lemon",
+      "price": 9.99,
+      "pic": "./images/Juicy Lemon"
+    },
+    {
+      "id": 8,
+      "title": "Clean Lavander",
+      "price": 9.99,
+      "pic": "./images/Clean Lavander"
+    }
+  ]
+}
