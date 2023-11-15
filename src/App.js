@@ -4,9 +4,9 @@ import { StopwatchApp } from "./stopwatchApp";
 function App() {
   return (
     <>
-      {/* <div className="bg-[#343D4B]">
+      <div className="bg-[#343D4B]">
         <Container />
-      </div> */}
+      </div>
       <div className="bg-[#3E3E3E] h-screen">
         <StopwatchApp />
       </div>
